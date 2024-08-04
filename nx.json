@@ -52,7 +52,7 @@
     "git": {
       "commitMessage": "chore(perfio): publish {version} [skip ci]"
     },
-    "projects": ["packages/perfio/*"],
+    "projects": ["packages/*"],
     "changelog": {
       "workspaceChangelog": {
         "file": false,

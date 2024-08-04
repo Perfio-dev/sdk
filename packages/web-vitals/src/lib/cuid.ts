@@ -1,5 +1,7 @@
+const itemKey = '__perfio_cuid';
+
 export function cuid(): string {
-  const existingId = localStorage.getItem('__perfio_cuid');
+  const existingId = localStorage.getItem(itemKey);
 
   if (existingId) {
     return existingId;
@@ -7,7 +9,7 @@ export function cuid(): string {
 
   const id = _cuid();
 
-  localStorage.setItem('__perfio_cuid', id);
+  localStorage.setItem(itemKey, id);
 
   return id;
 }
