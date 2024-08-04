@@ -9,6 +9,9 @@
     "perfio"
   ],
   "homepage": "https://perfio.dev",
+  "repository": {
+    "url": "https://github.com/Perfio-dev/sdk"
+  },
   "license": "AGPL-3.0",
   "contributors": [
     "Igor Katsuba <igor@katsuba.dev>"
