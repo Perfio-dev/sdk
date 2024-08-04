@@ -1,6 +1,5 @@
 'use client';
 
-import { usePathname } from 'next/navigation';
 import { useReportWebVitals } from 'next/web-vitals';
 
 import { collectMetrics } from './collect-metrics';
@@ -11,8 +10,6 @@ import { getScreenSize } from './get-screen-size';
 import { PerfioOptions } from './options';
 
 export function PerfioProvider({ endpoint, token }: PerfioOptions) {
-  const path = usePathname();
-
   useReportWebVitals((metric) => {
     if (typeof window === 'undefined' || !window) {
       return;
@@ -31,7 +28,7 @@ export function PerfioProvider({ endpoint, token }: PerfioOptions) {
     const screen = getScreenSize();
 
     collectMetrics({
-      path,
+      path: window.location.pathname,
       speed,
       screen,
       data: metric,
