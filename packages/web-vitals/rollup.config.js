@@ -32,5 +32,12 @@ module.exports = withNx(
         limit: 10000, // 10kB
       }),
     ],
+    output: {
+      banner: (chunk) => {
+        if (chunk.facadeModuleId?.endsWith('next.ts')) {
+          return `'use client';`;
+        }
+      },
+    },
   },
 );
