@@ -1,0 +1,17 @@
+{
+  "name": "web-vitals",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "packages/web-vitals",
+  "projectType": "library",
+  "tags": ["publishable"],
+  "// targets": "to see all targets run: nx show project next --web",
+  "targets": {},
+  "release": {
+    "version": {
+      "generatorOptions": {
+        "packageRoot": "dist/{projectRoot}",
+        "currentVersionResolver": "git-tag"
+      }
+    }
+  }
+}

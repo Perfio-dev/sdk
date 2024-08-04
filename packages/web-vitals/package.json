@@ -1,0 +1,22 @@
+{
+  "name": "@perfio/web-vitals",
+  "version": "0.0.0-development",
+  "keywords": [
+    "web-vitals",
+    "monitoring",
+    "performance",
+    "analytics",
+    "perfio"
+  ],
+  "homepage": "https://perfio.dev",
+  "license": "AGPL-3.0",
+  "contributors": [
+    "Igor Katsuba <igor@katsuba.dev>"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "authors": [
+    "Igor Katsuba <igor@katsuba.dev>"
+  ]
+}
