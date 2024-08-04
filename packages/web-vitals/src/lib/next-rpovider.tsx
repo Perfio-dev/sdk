@@ -28,8 +28,8 @@ export function PerfioProvider({ endpoint, token }: PerfioOptions) {
     const screen = getScreenSize();
 
     collectMetrics({
-      path: window.location.pathname,
       speed,
+      path: window.location.pathname,
       screen,
       data: metric,
       sessionId: sessionId,
